@@ -1,0 +1,37 @@
+.container{
+    display:grid;
+    grid-template-columns: repeat(8,1fr) ;
+    grid-template-rows: 1fr 1fr;
+    height: 60vh;
+    width: 100vw;
+    grid-gap: 0.5rem;
+}
+.grid{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid black;
+    border-radius: 0.5rem;
+}
+.grid:hover{
+    transform: scale(1.05);
+    transition: 0.2s;
+}
+.grid:not(:hover){
+    /* transform: scale(1.05); */
+    transition: 0.5s;
+}
+.grid img{
+    height: 70%;
+    width: 80%;
+}
+.grid2:hover{
+    transition: all 2s linear;
+    transform: rotate(360deg);
+}
+.grid3:hover{
+    transition: all 2s linear;
+    transform: skew(360deg);
+}
+
+
